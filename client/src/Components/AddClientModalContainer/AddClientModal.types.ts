@@ -7,7 +7,7 @@ export interface ClientForm {
 }
 
 export interface DataFromCache {
-    clients: Client[]
+    clients: Client[];
 }
 
 export type DataCache = DataFromCache | null;

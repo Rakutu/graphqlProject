@@ -2,10 +2,6 @@ import { model, Schema, Types } from 'mongoose';
 
 
 const ProjectSchema = new Schema({
-    clientId: {
-        type: Types.ObjectId,
-        ref: 'Client',
-    },
     name: {
         type: String,
     },
@@ -15,6 +11,10 @@ const ProjectSchema = new Schema({
     status: {
         type: String,
         enum: ['Not started', 'In progress', 'Completed']
+    },
+    clientId: {
+        type: Schema.Types.ObjectId,
+        ref: 'Client',
     },
 });
 

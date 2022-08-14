@@ -6,7 +6,6 @@ export const getProjects = gql`
         projects {
             id
             name
-            description
             status
         }
     }
